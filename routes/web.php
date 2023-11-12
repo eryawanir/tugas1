@@ -48,3 +48,9 @@ function($jenis = 'smartphone', $merek = 'samsung'){
 Route::get('/user/{id}', function($id){
     return "tampilkan user dengan id = $id";
 })->where('id', '[0-9]+');
+
+Route::get('/hubungi-kami', function (){
+    return "<h1>Hubungi Kami</h1>";
+});
+
+Route::redirect('/contact-us', '/hubungi-kami');
