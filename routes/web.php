@@ -66,3 +66,7 @@ Route::prefix('/admin')->group(function(){
         echo "<h1> Daftar Karyawan</h1>";
     });
 });
+
+Route::fallback(function(){
+    return "Halaman 404 diganti jadi ini";
+});
