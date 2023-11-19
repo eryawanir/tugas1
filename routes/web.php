@@ -32,7 +32,7 @@ Route::get('/belajar', function(){
     echo '<p>Sedang Belajar Laravel</p>';
 });
 
-Route::get('/mahasiswa/{nama}', function($nama){
+Route::get('mahasiswa/{nama}', function($nama){
     return "Tampilkan data mahasiswa bernama $nama";
 });
 
