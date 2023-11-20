@@ -70,3 +70,10 @@ Route::prefix('/admin')->group(function(){
 Route::fallback(function(){
     return "Halaman 404 diganti jadi ini";
 });
+
+Route::get('debug', function(){
+    $var = ['ayam', 2 => ['kucing', 'anjing']];
+    // dd($var);
+    dump($var);
+    return $var;
+});
